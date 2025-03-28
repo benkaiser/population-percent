@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA Population Visualization</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="map"></div>
+        <div class="controls">
+            <h2>USA Population Visualization</h2>
+            <p><span id="percentage">50</span>% of USA lives in the red area</p>
+            <input type="range" id="slider" min="0" max="100" value="50" step="1">
+            <div class="stats">
+                <p>Population in highlighted area: <span id="highlighted-pop">0</span></p>
+                <p class="data-source">Data source: <a href="https://www.census.gov/data.html" target="_blank">United States Census Bureau</a> <a target="_blank" href="https://michaelminn.net/tutorials/data/#acs">repackaged in GeoJSON by Michael Minn</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/pako@2.1.0/dist/pako.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

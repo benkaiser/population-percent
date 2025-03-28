@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     async function loadGeoJSON() {
         try {
             // Let the browser handle decompression automatically with proper headers
-            const response = await fetch('australia.geojson.gz', {
+            const response = await fetch('australia.geojson', {
                 headers: {
                     'Accept-Encoding': 'gzip'
                 }

@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    flex: 7; /* Takes 70% of available space */
+}
+
+.controls {
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+#slider {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.stats {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    #map {
+        width: 70%;
+        height: 100%;
+        flex: auto; /* Reset flex property */
+    }
+
+    .controls {
+        width: 30%;
+        height: 100%;
+        overflow-y: auto; /* Keep overflow-y auto only for desktop */
+    }
+}
